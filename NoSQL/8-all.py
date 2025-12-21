@@ -8,4 +8,4 @@ def list_all(mongo_collection):
     This function returns list of documents
     '''
 
-    return list(db.mongo_collection.find())
+    return mongo_collection.find()
