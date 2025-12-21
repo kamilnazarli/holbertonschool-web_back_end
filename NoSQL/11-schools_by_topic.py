@@ -1,4 +1,4 @@
-#!usr/bin/env python3
+#!/usr/bin/env python3
 '''
 This module returns list of school having specific topic
 '''
