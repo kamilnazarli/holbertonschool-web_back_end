@@ -8,4 +8,4 @@ def update_topics(mongo_collection, name, topics):
     To change all topics of a school document based on name
     """
 
-    mongo_collection.updateMany({'name': name}, {'$set': {'topics': topics}}, False, True)
+    mongo_collection.update({'name': name}, {'$set': {'topics': topics}}, False, True)
