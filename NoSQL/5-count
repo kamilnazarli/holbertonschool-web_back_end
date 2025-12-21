@@ -1,2 +1,2 @@
 // To count number of collections
-db.school.countDocuments()
+db.school.countDocuments();
