@@ -10,6 +10,6 @@ def schools_by_topic(mongo_collection, topic):
 
     ls = []
     for school in mongo_collection.find():
-        if topic is in school.get('topics'):
+        if topic is in school.get('topics', ""):
             ls.append(school)
     return ls
