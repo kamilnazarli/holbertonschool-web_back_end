@@ -10,6 +10,7 @@ client = MongoClient('localhost', 27017)
 db = client.logs
 methods = ["GET", "POST", "PUT", "PATCH", "DELETE"]
 clc = db.nginx
+print("{} logs".format(clc.count_documents({})))
 def log_stats(mongo_collection):
     '''
     Docstring for log_stats
