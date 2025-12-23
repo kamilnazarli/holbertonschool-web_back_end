@@ -22,4 +22,5 @@ def log_stats(mongo_collection):
     for method in methods:
         print("\tmethod {}: {}".format(method, mongo_collection.count_documents({"method": method})))
     print("{} status check".format(mongo_collection.count_documents({"method": "GET", "path": "/status"})))
-log_stats(clc)
+if __name__ == "__main__":
+    log_stats(clc)
